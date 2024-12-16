@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "framer-motion": "^11.14.4",
+    "gray-matter": "^4.0.3",
+    "howler": "^2.2.4",
+    "marked": "^15.0.3",
+    "next": "^15.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-richtext": "^1.1.0",
+    "react-rough-notation": "^1.0.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16"
+  }
+}
