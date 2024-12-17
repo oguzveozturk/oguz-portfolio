@@ -11,7 +11,6 @@ imageCount: 6
 imageFolder: "bitaksi"
 paragraph: "My clients are amazingly diverse! I am truly fascinated by this fact. This project for instance is an application directed to an expert company in Topography. I had to create an awesome image to its professional work.
 if you tend to minimal interfaces, then i selectively invite you to see this ONE!"
-preview: "/images/preview/preview-2.webp"
 role: "iOS Developer"
 time: "06/07/2023 - 12/2023 - 6 Months"
 live: "https://apps.apple.com/tr/app/bitaksi-your-taxi/id589500723"

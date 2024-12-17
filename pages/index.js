@@ -37,105 +37,114 @@ export default function Home({ projects }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: transition }}
       exit={{ opacity: 0 }}
-      className='flex flex-col max-w-[900px] mx-auto px-4 md:px-12 lg:px-0 antialiased'>
+      className="flex flex-col max-w-[900px] mx-auto px-4 md:px-12 lg:px-0 antialiased"
+    >
       <Head>
         <title>Oguz Ozturk - Senior iOS Developer </title>
-        <link rel='icon' href='/favicon.ico' />
-        <link rel='preconnect' href='https://fonts.googleapis.com' />
-        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin="anonymous" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
-          href='https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap'
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
         />
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap" />
       </Head>
       {/* Navbar */}
       <nav>
         <NavBar />
       </nav>
-      <main className=' flex-col space-y-12 md:space-y-24 '>
+      <main className=" flex-col space-y-12 md:space-y-24 ">
         {/* Hero section */}
 
-        <section className='mt-12 flex flex-col space-y-12 lg:space-y-0 lg:flex-row lg:justify-between lg:items-start'>
-          <div className='lg:w-2/3'>
-            <h1 className=' text-xl md:text-2xl lg:text-3xl font-bold leading-loose lg:text-justify	 md:leading-normal lg:leading-normal'>
+        <section className="mt-12 flex flex-col space-y-12 lg:space-y-0 lg:flex-row lg:justify-between lg:items-start">
+          <div className="lg:w-2/3">
+            <h1 className=" text-xl md:text-2xl lg:text-3xl font-bold leading-loose lg:text-justify	 md:leading-normal lg:leading-normal">
               Hey There! I'm{" "}
               <RoughNotation
-                type='highlight'
+                type="highlight"
                 show={true}
                 color={"#FFAD95"}
-                animationDuration={1200}>
+                animationDuration={1200}
+              >
                 Oguz Ozturk.
               </RoughNotation>
-              <br />iOS Developer & different thinker.
+              <br />
+              iOS Developer & different thinker.
             </h1>
 
-            <p className=' text-sm  mt-4 leading-normal 	 md:leading-loose  md:text-base text-justify	 text-gray-800 font-normal '>
-              I am 34 years old from Istanbul. My goal is to enhance your iOS presence by 
-              applying high problem-solving skills and a deep passion for developing robust, 
-              scalable solutions. I focus on delivering clean, efficient code that meets 
-              user needs and integrates seamlessly into any system.
+            <p className=" text-sm  mt-4 leading-normal 	 md:leading-loose  md:text-base text-justify	 text-gray-800 font-normal ">
+              I am 34 years old from Istanbul. My goal is to enhance your iOS
+              presence by applying high problem-solving skills and a deep
+              passion for developing robust, scalable solutions. I focus on
+              delivering clean, efficient code that meets user needs and
+              integrates seamlessly into any system.
             </p>
-            <div className='flex space-x-6 mt-6'>
-              <CustomLink title='ABOUT ME' link='/aboutMe' />
-              <CustomLink title='MY RESUME' link='/cv.pdf' newTab />
+            <div className="flex space-x-6 mt-6">
+              <CustomLink title="ABOUT ME" link="/aboutMe" />
+              <CustomLink title="MY RESUME" link="/cv.pdf" newTab />
             </div>
           </div>
 
-          <div className='relative w-56 h-56 lg:-translate-y-4'>
+          <div className="relative w-56 h-56 lg:-translate-y-4">
             <CustomImage
               image={HeroImage.src}
-              alt='Hero Image'
-              className='rounded-full'
+              alt="Hero Image"
+              className="rounded-full"
             />
           </div>
         </section>
 
         {/* status section */}
-        <section className='flex flex-col  lg:flex-row lg:justify-start space-y-8 lg:space-y-0  '>
-          <div className='lg:w-1/3 '>
-            <p className='statusTitle'>
+        <section className="flex flex-col  lg:flex-row lg:justify-start space-y-8 lg:space-y-0  ">
+          <div className="lg:w-1/3 ">
+            <p className="statusTitle">
               <RoughNotation
-                type='box'
+                type="box"
                 show={true}
                 color={"#FF7262"}
-                animationDelay={1000}>
+                animationDelay={1000}
+              >
                 CURRENTLY{" "}
               </RoughNotation>
             </p>
-            <p className='text-sm '>
+            <p className="text-sm ">
               Senior iOS Developer <br /> at{" "}
-              <span className='font-extrabold text-orange animate-pulse'>
+              <span className="font-extrabold text-orange animate-pulse">
                 OBSS
               </span>
             </p>
           </div>
-          <div className='lg:w-1/3 '>
-            <p className='statusTitle'>
+          <div className="lg:w-1/3 ">
+            <p className="statusTitle">
               <RoughNotation
-                type='box'
+                type="box"
                 show={true}
                 color={"#FF7262"}
-                animationDelay={1500}>
+                animationDelay={1500}
+              >
                 ON THE PROJECT{" "}
               </RoughNotation>
             </p>
-            <p className='text-sm  lg:w-2/3'>
-            <span className='font-extrabold text-orange animate-pulse'>
-                THY 
-              </span>
-              {" "} iOS Application 
+            <p className="text-sm  lg:w-2/3">
+              <span className="font-extrabold text-orange animate-pulse">
+                THY
+              </span>{" "}
+              iOS Application
             </p>
           </div>
-          <div className='lg:w-1/3 '>
-            <p className='statusTitle'>
+          <div className="lg:w-1/3 ">
+            <p className="statusTitle">
               <RoughNotation
-                type='box'
+                type="box"
                 show={true}
                 color={"#FF7262"}
-                animationDelay={2000}>
+                animationDelay={2000}
+              >
                 LEARINING ABOUT{" "}
               </RoughNotation>
             </p>
-            <p className='text-sm  '>VisionOS</p>
+            <p className="text-sm  ">VisionOS</p>
           </div>
         </section>
 
@@ -143,50 +152,51 @@ export default function Home({ projects }) {
 
         <section>
           <div>
-            <h2 className='title'>My Skills</h2>
-            <p className='text-sm  mt-4 leading-normal md:leading-loose	 md:text-base text-justify	 text-gray-800 font-normal  md:w-4/5'>
+            <h2 className="title">My Skills</h2>
+            <p className="text-sm  mt-4 leading-normal md:leading-loose	 md:text-base text-justify	 text-gray-800 font-normal  md:w-4/5">
               As a developer, I am convinced that the way to be successful in
               such a crowded market is to always LEARN!
             </p>
-            <ul className='grid grid-cols-2 gap-6 lg:grid-cols-4 lg:gap-10 mt-8  font-bold text-sm md:text-base'>
+            <ul className="grid grid-cols-2 gap-6 lg:grid-cols-4 lg:gap-10 mt-8  font-bold text-sm md:text-base">
               <li>
-                <span className='text-lightBlue text-xl'>.</span> UIKit
+                <span className="text-lightBlue text-xl">.</span> UIKit
               </li>
               <li>
-                <span className='text-lightBlue text-xl'>.</span> SwiftUI
+                <span className="text-lightBlue text-xl">.</span> SwiftUI
               </li>
               <li>
-                <span className='text-lightBlue text-xl'>.</span> Combine
+                <span className="text-lightBlue text-xl">.</span> Combine
               </li>
               <li>
-                <span className='text-lightBlue text-xl'>.</span> Core Data
+                <span className="text-lightBlue text-xl">.</span> Core Data
               </li>
               <li>
-                <span className='text-lightBlue text-xl'>.</span > Unit Testing
+                <span className="text-lightBlue text-xl">.</span> Unit Testing
               </li>
               <li>
-                <span className='text-lightBlue text-xl'>.</span> Firebase
+                <span className="text-lightBlue text-xl">.</span> Firebase
               </li>
               <li>
-                <span className='text-lightBlue text-xl'>.</span> CI/CD Integration
+                <span className="text-lightBlue text-xl">.</span> CI/CD
+                Integration
               </li>
               <li>
-                <span className='text-lightBlue text-xl'>.</span> Git Workflow
+                <span className="text-lightBlue text-xl">.</span> Git Workflow
               </li>
             </ul>
           </div>
         </section>
 
         {/* Project Section */}
-        <section className=''>
-          <h2 className='title'>Recent Work </h2>
-          <p className='text-sm  mt-6  leading-normal md:leading-loose text-justify	 sm:w-4/5 md:w-4/5 md:text-base  text-gray-800 font-normal  '>
+        <section className="">
+          <h2 className="title">Recent Work </h2>
+          <p className="text-sm  mt-6  leading-normal md:leading-loose text-justify	 sm:w-4/5 md:w-4/5 md:text-base  text-gray-800 font-normal  ">
             I like to stay busy and always have a project in the works. Take a
             look at some of the applications, articles, and companies I've
             dedicated my time to.
           </p>
-          <div className='flex space-x-6 lg:space-x-12 mt-8 '>
-            {Categories.map(filter => (
+          <div className="flex space-x-6 lg:space-x-12 mt-8 ">
+            {Categories.map((filter) => (
               <div key={filter.id}>
                 <button
                   onClick={() => {
@@ -199,14 +209,15 @@ export default function Home({ projects }) {
                       : `filter text-gray-400  transitions ${
                           isAnimated ? "animate-bounce" : null
                         }`
-                  }>
+                  }
+                >
                   {filter.title}
                 </button>
               </div>
             ))}
           </div>
 
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-8 my-16 lg:my-20'>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-16 lg:my-20">
             {projects.map((project, index) => (
               <>
                 {project.frontmatter.category === isActive ? (
@@ -216,7 +227,8 @@ export default function Home({ projects }) {
                       opacity: 1,
                       y: 0,
                       transition: transition,
-                    }}>
+                    }}
+                  >
                     {isClient && (
                       <AppStoreListing
                         folder={project.frontmatter.imageFolder}
@@ -244,45 +256,45 @@ export default function Home({ projects }) {
 
         {/* Work Process Section */}
 
-        <section className=' flex flex-col  space-y-12 lg:flex-row lg:space-y-0  lg:items-center lg:justify-between'>
-          <div className='lg:w-1/2'>
-            <p className='text-sm lg:text-base text-blue-500'>
+        <section className=" flex flex-col  space-y-12 lg:flex-row lg:space-y-0  lg:items-center lg:justify-between">
+          <div className="lg:w-1/2">
+            <p className="text-sm lg:text-base text-blue-500">
               {" "}
               Want to know what is like to work with me?{" "}
             </p>
-            <h2 className='title'>Its a mix of these things.</h2>
+            <h2 className="title">Its a mix of these things.</h2>
           </div>
-          <div className=' relative h-[250px] md:h-[400px]  md:w-1/2'>
+          <div className=" relative h-[250px] md:h-[400px]  md:w-1/2">
             <CustomImage
               image={processGif}
-              alt='process'
-              className='object-contain'
+              alt="process"
+              className="object-contain"
             />
           </div>
         </section>
 
         {/* Instagram Section */}
 
-        <section className='flex flex-col space-y-12 lg:flex-row lg:space-y-0 lg:spacex-12 lg:items-center lg:justify-between'>
+        <section className="flex flex-col space-y-12 lg:flex-row lg:space-y-0 lg:spacex-12 lg:items-center lg:justify-between">
           <div>
-            <h2 className='title'>
+            <h2 className="title">
               I’m a lot cooler on{" "}
-              <span className='font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600'>
+              <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600">
                 Instagram
               </span>
             </h2>
             <CustomLink
-              title='FOLLOW ME'
-              link='https://www.instagram.com/oguzozturk91/'
+              title="FOLLOW ME"
+              link="https://www.instagram.com/oguzozturk91/"
               newTab
             />
           </div>
-          <div className='h-60 w-full md:w-1/2'>
-            <div className='relative w-full  h-60'>
+          <div className="h-60 w-full md:w-1/2">
+            <div className="relative w-full  h-60">
               <CustomImage
                 image={Instagram.src}
-                alt='Instagram image'
-                className='object-contain'
+                alt="Instagram image"
+                className="object-contain"
               />
             </div>
           </div>
@@ -300,7 +312,7 @@ export async function getStaticProps() {
   const files = fs.readdirSync(path.join("projects"));
 
   // Get slug and frontmatter from posts
-  const projects = files.map(filename => {
+  const projects = files.map((filename) => {
     // Create slug
     const slug = filename.replace(".md", "");
 
@@ -318,7 +330,9 @@ export async function getStaticProps() {
     };
   });
 
-  projects.sort((a, b) => (a.frontmatter.order || 0) - (b.frontmatter.order || 0));
+  projects.sort(
+    (a, b) => (a.frontmatter.order || 0) - (b.frontmatter.order || 0)
+  );
 
   return {
     props: {

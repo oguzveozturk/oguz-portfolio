@@ -15,42 +15,46 @@ function aboutMe() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: transition }}
       exit={{ opacity: 0 }}
-      className='flex flex-col max-w-[900px] mx-auto px-4 md:px-12 lg:px-0 antialiased text-justify	'>
+      className="flex flex-col max-w-[900px] mx-auto px-4 md:px-12 lg:px-0 antialiased text-justify	"
+    >
       <Head>
         <title>Oguz Ozturk - Senior iOS Developer </title>
-        <link rel='icon' href='/favicon.ico' />
-        <link rel='preconnect' href='https://fonts.googleapis.com' />
-        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin="anonymous" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
-          href='https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap'
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
         />
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap" />
       </Head>
       <NavBar />
-      <main className='flex-col space-y-12 md:space-y-24 '>
+      <main className="flex-col space-y-12 md:space-y-24 ">
         <div>
-          <div className='mt-12 lg:mt-0'>
-            <CustomLink link='/' title='← Go Back' />
+          <div className="mt-12 lg:mt-0">
+            <CustomLink link="/" title="← Go Back" />
           </div>
-          <h2 className=' my-8 text-xl md:text-2xl lg:text-3xl font-bold'>
+          <h2 className=" my-8 text-xl md:text-2xl lg:text-3xl font-bold">
             {" "}
             <RoughNotation
-              type='highlight'
+              type="highlight"
               show={true}
               color={"#FFAD95"}
-              animationDuration={1200}>
+              animationDuration={1200}
+            >
               About Me
             </RoughNotation>
           </h2>
-          <div className='flex flex-col space-y-12 lg:space-y-0 lg:flex-row-reverse lg:justify-between lg:items-center '>
-            <div className='relative w-[300px] lg:w-1/3   h-[410px]  '>
+          <div className="flex flex-col space-y-12 lg:space-y-0 lg:flex-row-reverse lg:justify-between lg:items-center ">
+            <div className="relative w-[300px] lg:w-1/3   h-[410px]  ">
               <CustomImage
                 image={HeroImage.src}
-                alt='Hero Image'
-                className='object-contain '
+                alt="Hero Image"
+                className="object-contain "
               />
             </div>
-            <div className='lg:w-2/3 lg:mr-12'>
-              <p className=' text-sm  mt-4 leading-normal md:leading-loose  md:text-base  text-gray-700 font-normal  '>
+            <div className="lg:w-2/3 lg:mr-12">
+              <p className=" text-sm  mt-4 leading-normal md:leading-loose  md:text-base  text-gray-700 font-normal  ">
                 Hello! If you're wondering who's the person behind this work,
                 then this section is made for you! Let me just tell you that I
                 am exactly like you at this point, I am always curious about
@@ -67,10 +71,10 @@ function aboutMe() {
             </div>
           </div>
         </div>
-        <div className='flex flex-col space-y-6 lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:items-center'>
-          <div className='lg:w-1/2'>
-            <h2 className='title mt-4 lg:mt-12'>The Logo</h2>
-            <p className='text-sm  mt-4 leading-normal md:leading-loose  md:text-base  text-gray-700 font-normal  '>
+        <div className="flex flex-col space-y-6 lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:items-center">
+          <div className="lg:w-1/2">
+            <h2 className="title mt-4 lg:mt-12">The Logo</h2>
+            <p className="text-sm  mt-4 leading-normal md:leading-loose  md:text-base  text-gray-700 font-normal  ">
               I really enjoy drawing things and creating new ideas that's why I
               choose to create a logo using Islamic calligraphy if you're
               wondering, this is my name in Arabic calligraphy and I add code
@@ -78,13 +82,13 @@ function aboutMe() {
               this timelapse.
             </p>
           </div>
-          <div className='relative w-[300px] lg:w-1/3   h-[410px]  '>
-              <CustomImage
-                image={HeroImage.src}
-                alt='Hero Image'
-                className='object-contain '
-              />
-            </div>
+          <div className="relative w-[300px] lg:w-1/3   h-[410px]  ">
+            <CustomImage
+              image={HeroImage.src}
+              alt="Hero Image"
+              className="object-contain "
+            />
+          </div>
         </div>
       </main>
       <Footer />

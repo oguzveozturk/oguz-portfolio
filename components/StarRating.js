@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const StarRating = ({ rating = 4.8, totalStars = 5 }) => {
   const starFillPercentage = (rating / totalStars) * 100;
@@ -12,7 +12,7 @@ const StarRating = ({ rating = 4.8, totalStars = 5 }) => {
             <stop offset={`${starFillPercentage}%`} stopColor="#E0E0E0" />
           </linearGradient>
         </defs>
-        
+
         {[...Array(5)].map((_, index) => (
           <path
             key={index}
