@@ -1,20 +1,21 @@
 ---
-title: "Supersense - AI for Blind"
+title: "Supersense"
 category: 1
 order: 4
-subtitle: "Virtual Collaboration Research Inc."
+props: [UIKit, Unit Testing, RxSwift, Cocoapods, Google MLKit, Realm, AVFoundation]
+subtitle: "Mediate Tech."
 popularity: ""
 score: 4.1
 rating: "560 Ratings"
 description: "Scan text, money, objects"
 imageFolder: "supersense"
 imageCount: 5
-paragraph: "I worked as a Senior iOS Developer on the Ziraat Mobil application for 11 months. As part of a 40-person team at Roofstacks, we provided outsourcing services to Ziraat Bank. During this time, I played a key role in integrating the latest version of SealSDK into the application. Additionally, as part of Ziraat Bank’s Digital Transformation Program, I was actively involved in redesigning the main dashboard and developing the funds management screens."
+paragraph: "I joined this project, which aims to enhance the interaction of visually impaired individuals with their surroundings, at a later stage. This project, primarily written in UIKit, heavily utilized Google's AI libraries. During my involvement, I contributed to the 'Describe Scene' feature and the Text Reader screens."
 role: "iOS Developer"
-time: "02/2024 - 01/2024 - 11 Months"
+time: "11/2020 - 06/2021 - 7 Months"
 live: "https://apps.apple.com/us/app/supersense-ai-for-blind/id1484547836"
 ---
 
 ### Challenges
 
-One of the biggest challenges in the project was avoiding conflicts that naturally arose in such a large team. Another major challenge was developing and extending a generic structure that had been originally built in 2018 using Objective-C inheritance, all while maintaining its integrity and minimizing disruption to the existing architecture.
+One of the most challenging aspects of the project was working with RxSwift. Another significant challenge was ensuring that every component we developed was fully compatible with accessibility standards.

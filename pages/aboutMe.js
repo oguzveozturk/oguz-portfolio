@@ -6,6 +6,8 @@ import CustomLink from "../components/CustomLink";
 import { RoughNotation } from "react-rough-notation";
 import CustomImage from "../components/CustomImage";
 import HeroImage from "../public/images/aboutMe.webp";
+import Instagram from "../public/images/instagram.webp";
+import Timeline from "../components/Timeline";
 
 function aboutMe() {
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
@@ -55,41 +57,54 @@ function aboutMe() {
             </div>
             <div className="lg:w-2/3 lg:mr-12">
               <p className=" text-sm  mt-4 leading-normal md:leading-loose  md:text-base  text-gray-700 font-normal  ">
-                Hello! If you're wondering who's the person behind this work,
-                then this section is made for you! Let me just tell you that I
-                am exactly like you at this point, I am always curious about
-                what's behind the professional serious image of any project
-                owner. The branding content is always perfectly curated, and
-                this makes a lot of sense! That's why I considered this space to
-                be just me, Oguz, your new friend! Well.. I was born in Morocco
-                in Agadir city. I grew up hating school. I could be wrong but I
-                still have the same feeling! I adore creating beautiful things
-                and sense the pride and the passion to share them. I'm a fan of
-                minimalism! Next to coding and managing my small business, I
-                love music, calligraphy and coffee!
+                Hello again! Did I mention my name is Oguz? : ) I graduated from
+                Sakarya University with a degree in Civil Engineering in 2015.
+                After a 4-year career in civil engineering, I made a leap into
+                the world of software in 2019. In 2021, I tied the knot and
+                embarked on a new adventure called marriage. Currently, I'm
+                living in the vibrant city of Istanbul. I'm a movie buff and a
+                gaming enthusiast, especially when it comes to soulslike games.
+                Oh, and I'm a die-hard Fenerbahçe fan, which means I'm used to a
+                rollercoaster of emotions. When I'm not coding or cheering for
+                my team, you can find me enjoying a good laugh and a cup of
+                coffee! If you ever need someone to discuss the latest movie
+                plot twists or the best strategies for beating a tough game
+                boss, I'm your guy. And if you see me with a puzzled look, I'm
+                probably debugging code or wondering if cinema has really died.
+                So, let's keep the code clean and the coffee strong!
               </p>
             </div>
           </div>
         </div>
-        <div className="flex flex-col space-y-6 lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:items-center">
-          <div className="lg:w-1/2">
-            <h2 className="title mt-4 lg:mt-12">The Logo</h2>
-            <p className="text-sm  mt-4 leading-normal md:leading-loose  md:text-base  text-gray-700 font-normal  ">
-              I really enjoy drawing things and creating new ideas that's why I
-              choose to create a logo using Islamic calligraphy if you're
-              wondering, this is my name in Arabic calligraphy and I add code
-              word below it to give personality and meaning as you can see in
-              this timelapse.
-            </p>
-          </div>
-          <div className="relative w-[300px] lg:w-1/3   h-[410px]  ">
-            <CustomImage
-              image={HeroImage.src}
-              alt="Hero Image"
-              className="object-contain "
+        {/* Timeline Section */}
+        <section className="py-12">
+          <Timeline />
+        </section>
+        {/* Instagram Section */}
+        <section className="flex flex-col space-y-12 lg:flex-row lg:space-y-0 lg:spacex-12 lg:items-center lg:justify-between">
+          <div>
+            <h2 className="title">
+              I’m a lot cooler on{" "}
+              <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600">
+                Instagram
+              </span>
+            </h2>
+            <CustomLink
+              title="FOLLOW ME"
+              link="https://www.instagram.com/oguzozturk91/"
+              newTab
             />
           </div>
-        </div>
+          <div className="h-60 w-full md:w-1/2">
+            <div className="relative w-full  h-60">
+              <CustomImage
+                image={Instagram.src}
+                alt="Instagram image"
+                className="object-contain"
+              />
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </motion.div>

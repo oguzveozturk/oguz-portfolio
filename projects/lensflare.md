@@ -2,16 +2,28 @@
 title: "Lensflare"
 category: 2
 order: 4
-subtitle: "Case Study"
-popularity: ""
+props: [CI/CD, SealSDK, Cocoapods, Charts, MVC, Objective-C]
+popularity: "• MVVM"
 description: "Overlay lens flare"
 imageFolder: "lensflare"
 imageCount: 4
-paragraph: "I worked as a Senior iOS Developer on the Ziraat Mobil application for 11 months. As part of a 40-person team at Roofstacks, we provided outsourcing services to Ziraat Bank. During this time, I played a key role in integrating the latest version of SealSDK into the application. Additionally, as part of Ziraat Bank’s Digital Transformation Program, I was actively involved in redesigning the main dashboard and developing the funds management screens."
+paragraph: "LensFlare is a project that retrives overlays from the server and users can adds overlays on images and can be save in gallery."
 role: "iOS Developer"
 time: "02/2024 - 01/2024 - 11 Months"
 ---
 
-### Challenges
+### Features
 
-One of the biggest challenges in the project was avoiding conflicts that naturally arose in such a large team. Another major challenge was developing and extending a generic structure that had been originally built in 2018 using Objective-C inheritance, all while maintaining its integrity and minimizing disruption to the existing architecture.
+-  Image rendering with CoreGraphics
+
+- Image I/O framework for showing images (memory friendly)
+
+- Working offline by saving overlays to local data
+
+- MVVM Application Architecture
+
+- Shows a histogram graph of given image -via vImage-
+
+- No third parthy libraries
+
+- UI programmatically coded

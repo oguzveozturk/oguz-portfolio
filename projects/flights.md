@@ -2,16 +2,21 @@
 title: "State of Flights"
 category: 2
 order: 3
-subtitle: "Case Study"
-popularity: ""
+props: [VIPER, Modular, SPM, Unit Testing, Programmatic UI]
+popularity: "• Modular • VIPER"
 description: "Preview latest flights"
 imageFolder: "flights"
 imageCount: 3
-paragraph: "I worked as a Senior iOS Developer on the Ziraat Mobil application for 11 months. As part of a 40-person team at Roofstacks, we provided outsourcing services to Ziraat Bank. During this time, I played a key role in integrating the latest version of SealSDK into the application. Additionally, as part of Ziraat Bank’s Digital Transformation Program, I was actively involved in redesigning the main dashboard and developing the funds management screens."
+paragraph: "The user can drag the map to view active flights from opensky API. By clicking on the aircraft, they can obtain the ICAO24 code and origin country information. The flights can be filtered by origin country using the list at the bottom of the screen."
 role: "iOS Developer"
 time: "02/2024 - 01/2024 - 11 Months"
 ---
 
-### Challenges
+### Project Structure
 
-One of the biggest challenges in the project was avoiding conflicts that naturally arose in such a large team. Another major challenge was developing and extending a generic structure that had been originally built in 2018 using Objective-C inheritance, all while maintaining its integrity and minimizing disruption to the existing architecture.
+* "StateOfFlights": Begining of the app.Contains AppDelegate, AppRouter and AppContainer. 
+* "FlightsMap": A draggable map displaying the real-time status of flights.".
+* "CountrySelector": Builted with UISheetPresentationController. The Table below the screen allows the user to select the origin country.
+* "FlightAPI": Files or classes related to communicating with an external API. This could include code for making HTTP requests to a web server, parsing responses, and handling any errors that may occur.
+* "CommonViews": Reusable UI elements.
+* "Common": Files or resources that are shared across multiple parts of the project. Such as utility classes, global constants or extensions.

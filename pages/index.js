@@ -7,12 +7,10 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import CustomImage from "../components/CustomImage";
 import HeroImage from "../public/images/oguz.webp";
-import Instagram from "../public/images/instagram.webp";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import processGif from "../public/images/gif.gif";
-import { Howl } from "howler";
 import { RoughNotation } from "react-rough-notation";
 import AppStoreListing from "../components/AppstoreListing";
 
@@ -24,7 +22,7 @@ export default function Home({ projects }) {
   const Categories = [
     { id: 1, title: "Client project" },
     { id: 2, title: "Case study" },
-    { id: 3, title: "Web Apps" },
+    //{ id: 3, title: "Web Apps" },
   ];
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
 
@@ -57,7 +55,7 @@ export default function Home({ projects }) {
       <main className=" flex-col space-y-12 md:space-y-24 ">
         {/* Hero section */}
 
-        <section className="mt-12 flex flex-col space-y-12 lg:space-y-0 lg:flex-row lg:justify-between lg:items-start">
+        <section className="mt-12 flex flex-col-reverse space-y-12 lg:space-y-0 lg:flex-row lg:justify-between lg:items-start">
           <div className="lg:w-2/3">
             <h1 className=" text-xl md:text-2xl lg:text-3xl font-bold leading-loose lg:text-justify	 md:leading-normal lg:leading-normal">
               Hey There! I'm{" "}
@@ -67,26 +65,26 @@ export default function Home({ projects }) {
                 color={"#FFAD95"}
                 animationDuration={1200}
               >
-                Oguz Ozturk.
+                Oguz.
               </RoughNotation>
               <br />
-              iOS Developer & different thinker.
+              iOS Developer & Different thinker.
             </h1>
 
             <p className=" text-sm  mt-4 leading-normal 	 md:leading-loose  md:text-base text-justify	 text-gray-800 font-normal ">
-              I am 34 years old from Istanbul. My goal is to enhance your iOS
+              My goal is to enhance your iOS
               presence by applying high problem-solving skills and a deep
               passion for developing robust, scalable solutions. I focus on
               delivering clean, efficient code that meets user needs and
-              integrates seamlessly into any system.
+              integrates seamlessly into iOS ecosystem.
             </p>
             <div className="flex space-x-6 mt-6">
-              <CustomLink title="ABOUT ME" link="/aboutMe" />
+              <CustomLink title="MORE ABOUT ME" link="/aboutMe" />
               <CustomLink title="MY RESUME" link="/cv.pdf" newTab />
             </div>
           </div>
 
-          <div className="relative w-56 h-56 lg:-translate-y-4">
+          <div className="relative w-56 h-56 lg:-translate-y-4 mb-6 lg:mb-0 self-center lg:self-auto">
             <CustomImage
               image={HeroImage.src}
               alt="Hero Image"
@@ -128,7 +126,7 @@ export default function Home({ projects }) {
             </p>
             <p className="text-sm  lg:w-2/3">
               <span className="font-extrabold text-orange animate-pulse">
-                THY
+                Turkish Airlines
               </span>{" "}
               iOS Application
             </p>
@@ -145,6 +143,73 @@ export default function Home({ projects }) {
               </RoughNotation>
             </p>
             <p className="text-sm  ">VisionOS</p>
+          </div>
+        </section>
+
+        {/* Project Section */}
+        <section className="">
+          <h2 className="title">Recent Work </h2>
+          <p className="text-sm  mt-6  leading-normal md:leading-loose text-justify	 sm:w-4/5 md:w-4/5 md:text-base  text-gray-800 font-normal  ">
+            I like to stay busy and always have a project in the works. Take a
+            look at some of the applications, and companies I've
+            dedicated my time to.
+          </p>
+          <div className="flex space-x-6 lg:space-x-12 mt-8 ">
+            {Categories.map((filter) => (
+              <div key={filter.id}>
+                <button
+                  onClick={() => {
+                    setIsActive(filter.id);
+                    setIsAnimated(false);
+                  }}
+                  className={
+                    isActive === filter.id
+                      ? "filter text-black  transitions"
+                      : `filter text-gray-400  transitions ${
+                          isAnimated ? "animate-bounce" : null
+                        }`
+                  }
+                >
+                  {filter.title}
+                </button>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:my-4">
+            {projects.map((project, index) => (
+              <>
+                {project.frontmatter.category === isActive ? (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{
+                      opacity: 1,
+                      y: 0,
+                      transition: transition,
+                    }}
+                  >
+                    {isClient && (
+                      <AppStoreListing
+                        folder={project.frontmatter.imageFolder}
+                        title={project.frontmatter.title}
+                        subtitle={project.frontmatter.subtitle}
+                        popularity={project.frontmatter.popularity}
+                        description={project.frontmatter.description}
+                        score={project.frontmatter.score}
+                        rating={project.frontmatter.rating}
+                        link={
+                          project.frontmatter.soon
+                            ? project.frontmatter.live
+                            : `/${project.slug}`
+                        }
+                        role={project.frontmatter.role}
+                        time={project.frontmatter.time}
+                      />
+                    )}
+                  </motion.div>
+                ) : null}
+              </>
+            ))}
           </div>
         </section>
 
@@ -184,119 +249,6 @@ export default function Home({ projects }) {
                 <span className="text-lightBlue text-xl">.</span> Git Workflow
               </li>
             </ul>
-          </div>
-        </section>
-
-        {/* Project Section */}
-        <section className="">
-          <h2 className="title">Recent Work </h2>
-          <p className="text-sm  mt-6  leading-normal md:leading-loose text-justify	 sm:w-4/5 md:w-4/5 md:text-base  text-gray-800 font-normal  ">
-            I like to stay busy and always have a project in the works. Take a
-            look at some of the applications, articles, and companies I've
-            dedicated my time to.
-          </p>
-          <div className="flex space-x-6 lg:space-x-12 mt-8 ">
-            {Categories.map((filter) => (
-              <div key={filter.id}>
-                <button
-                  onClick={() => {
-                    setIsActive(filter.id);
-                    setIsAnimated(false);
-                  }}
-                  className={
-                    isActive === filter.id
-                      ? "filter text-black  transitions"
-                      : `filter text-gray-400  transitions ${
-                          isAnimated ? "animate-bounce" : null
-                        }`
-                  }
-                >
-                  {filter.title}
-                </button>
-              </div>
-            ))}
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-16 lg:my-20">
-            {projects.map((project, index) => (
-              <>
-                {project.frontmatter.category === isActive ? (
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{
-                      opacity: 1,
-                      y: 0,
-                      transition: transition,
-                    }}
-                  >
-                    {isClient && (
-                      <AppStoreListing
-                        folder={project.frontmatter.imageFolder}
-                        title={project.frontmatter.title}
-                        subtitle={project.frontmatter.subtitle}
-                        popularity={project.frontmatter.popularity}
-                        description={project.frontmatter.description}
-                        score={project.frontmatter.score}
-                        rating={project.frontmatter.rating}
-                        link={
-                          project.frontmatter.soon
-                            ? project.frontmatter.live
-                            : `/${project.slug}`
-                        }
-                        role={project.frontmatter.role}
-                        time={project.frontmatter.time}
-                      />
-                    )}
-                  </motion.div>
-                ) : null}
-              </>
-            ))}
-          </div>
-        </section>
-
-        {/* Work Process Section */}
-
-        <section className=" flex flex-col  space-y-12 lg:flex-row lg:space-y-0  lg:items-center lg:justify-between">
-          <div className="lg:w-1/2">
-            <p className="text-sm lg:text-base text-blue-500">
-              {" "}
-              Want to know what is like to work with me?{" "}
-            </p>
-            <h2 className="title">Its a mix of these things.</h2>
-          </div>
-          <div className=" relative h-[250px] md:h-[400px]  md:w-1/2">
-            <CustomImage
-              image={processGif}
-              alt="process"
-              className="object-contain"
-            />
-          </div>
-        </section>
-
-        {/* Instagram Section */}
-
-        <section className="flex flex-col space-y-12 lg:flex-row lg:space-y-0 lg:spacex-12 lg:items-center lg:justify-between">
-          <div>
-            <h2 className="title">
-              I’m a lot cooler on{" "}
-              <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600">
-                Instagram
-              </span>
-            </h2>
-            <CustomLink
-              title="FOLLOW ME"
-              link="https://www.instagram.com/oguzozturk91/"
-              newTab
-            />
-          </div>
-          <div className="h-60 w-full md:w-1/2">
-            <div className="relative w-full  h-60">
-              <CustomImage
-                image={Instagram.src}
-                alt="Instagram image"
-                className="object-contain"
-              />
-            </div>
           </div>
         </section>
       </main>

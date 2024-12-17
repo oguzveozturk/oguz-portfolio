@@ -2,6 +2,7 @@
 title: "3ToGo"
 category: 1
 order: 6
+props: [MVC, Google Maps API, Programmatic UI, Social Media App]
 subtitle: "3ToGo Inc."
 popularity: ""
 score: 4.8
@@ -9,11 +10,11 @@ rating: "24 Ratings"
 description: "Best way to GO!"
 imageFolder: "3togo"
 imageCount: 6
-paragraph: "I worked as a Senior iOS Developer on the Ziraat Mobil application for 11 months. As part of a 40-person team at Roofstacks, we provided outsourcing services to Ziraat Bank. During this time, I played a key role in integrating the latest version of SealSDK into the application. Additionally, as part of Ziraat Bank’s Digital Transformation Program, I was actively involved in redesigning the main dashboard and developing the funds management screens."
+paragraph: "3ToGo marked my entry into the professional world as an iOS developer. Our compact team of four efficiently developed the project using the MVC architecture and programmatic UI. We selected Firebase Database for backend services and integrated Google Maps for location-based features."
 role: "Junior iOS Developer"
 time: "02/2024 - 01/2024 - 11 Months"
 ---
 
 ### Challenges
 
-One of the biggest challenges in the project was avoiding conflicts that naturally arose in such a large team. Another major challenge was developing and extending a generic structure that had been originally built in 2018 using Objective-C inheritance, all while maintaining its integrity and minimizing disruption to the existing architecture.
+As a junior developer, working with the Google Maps API and designing the follow/unfollow features were enjoyable challenges in the project.

@@ -18,7 +18,7 @@ const AppStoreListing = ({
   return (
     <Link href={link}>
       <div
-        className="p-4 rounded-lg transition-shadow duration-300 hover:shadow-xl 
+        className="py-5 rounded-lg transition-transform duration-[400ms] ease-in-out hover:scale-105 
         font-['-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif] "
       >
         <div className="flex flex-row space-x-4 ">
@@ -27,7 +27,7 @@ const AppStoreListing = ({
             {" "}
             {/* Set fixed size */}
             <div
-              className="w-full h-full relative overflow-hidden shadow-lg"
+              className="w-full h-full relative overflow-hidden shadow-lg hover:drop-shadow"
               style={{ backgroundColor: "#c11f25", borderRadius: "2rem" }}
             >
               <Image
@@ -73,12 +73,6 @@ const AppStoreListing = ({
               )}
             </div>
           </div>
-        </div>
-        <div className="flex flex-col space-y-0 items-start text-left">
-          <h1 className="uppercase text-base lg:text-xl tracking-widest mt-4 lg:mt-8">
-            • {role}
-          </h1>
-          <p className="text-sm  text-gray-500 mt-4 max-w-xs pl-5">{time}</p>
         </div>
       </div>
     </Link>

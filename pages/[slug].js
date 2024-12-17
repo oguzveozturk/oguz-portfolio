@@ -20,7 +20,7 @@ function page({
   frontmatter: {
     title,
     paragraph,
-    role,
+    props,
     live,
     imageFolder,
     imageCount,
@@ -93,15 +93,17 @@ function page({
                 </div>
               ) : null}
 
-              <div>
-                <div className="flex flex-col space-y-2 lg:flex-row lg:space-y-0 lg:space-x-6  lg:items-center">
-                  <p className="text-sm lg:pt-1 font-semibold ">• CI/CD</p>
-                  <p className="text-sm lg:pt-1 font-semibold ">• SEALSDK</p>
-                  <p className="text-sm lg:pt-1 font-semibold ">• Cocoapods</p>
-                  <p className="text-sm lg:pt-1 font-semibold ">• Charts</p>
-                  <p className="text-sm lg:pt-1 font-semibold ">• MVC</p>
+              {props && props.length > 0 && (
+                <div>
+                  <div className="flex flex-col space-y-2 lg:flex-row lg:space-y-0 lg:space-x-6  lg:items-center">
+                    {props.map((prop, index) => (
+                      <p key={index} className="text-sm lg:pt-1 font-semibold ">
+                        • {prop}
+                      </p>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </section>
@@ -111,14 +113,14 @@ function page({
           dangerouslySetInnerHTML={{ __html: marked(content) }}
         ></div>
 
-        <div className="relative w-full h-[400px] md:h-[500px]">
+        <div className="relative w-full h-[485px]">
           <HorizontalViewer folderName={imageFolder} imageCount={imageCount} />
         </div>
 
         {isClient && otherPosts.length > 0 ? (
-          <div>
+          <div className="pt-12">
             <h2 className="title">Other Projects</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 my-16 lg:my-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 my-4">
               {otherPosts.slice(0, 2).map((project) => (
                 <div key={project.slug}>
                   <motion.div

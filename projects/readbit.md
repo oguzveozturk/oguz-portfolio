@@ -2,19 +2,20 @@
 title: "ReadBit"
 category: 1
 order: 3
-subtitle: "Virtual Collaboration Research Inc."
+props: [SwiftUI, Vision, Memory Managment, AVPlayer, Speech Synthesis, Firebase Firestore, MVVM]
+subtitle: "Mediate Tech."
 popularity: ""
 score: 4.4
 rating: "613 Ratings"
 description: "Text to Speech Reader"
 imageFolder: "readbit"
 imageCount: 10
-paragraph: "I worked as a Senior iOS Developer on the Ziraat Mobil application for 11 months. As part of a 40-person team at Roofstacks, we provided outsourcing services to Ziraat Bank. During this time, I played a key role in integrating the latest version of SealSDK into the application. Additionally, as part of Ziraat Bank’s Digital Transformation Program, I was actively involved in redesigning the main dashboard and developing the funds management screens."
+paragraph: "I spearheaded the ReadBit project in 2020, leveraging SwiftUI to stay ahead of the curve with modern iOS development practices. This early adoption allowed me to quickly become proficient with SwiftUI and Combine frameworks. Our team, consisting of 4-6 iOS developers, collaborated closely to build a robust subscription management system from the ground up. We also successfully integrated a seamless paywall experience, enhancing the app's monetization strategy."
 role: "iOS Developer"
-time: "02/2024 - 01/2024 - 11 Months"
+time: "06/2021 - 06/2023 - 2 Years"
 live: "https://apps.apple.com/tr/app/readbit-text-to-speech-reader/id1545366628?l=tr&platform=iphone"
 ---
 
 ### Challenges
 
-One of the biggest challenges in the project was avoiding conflicts that naturally arose in such a large team. Another major challenge was developing and extending a generic structure that had been originally built in 2018 using Objective-C inheritance, all while maintaining its integrity and minimizing disruption to the existing architecture.
+The most challenging part of this project was adapting to declarative programming with SwiftUI. It required setting aside the reflexes and habits formed with UIKit and thinking differently. Another significant challenge was dealing with the limitations of the initial versions of SwiftUI. We couldn't progress much without StateObject and LazyVGrid, which forced us to drop iOS 13 support. The navigation structure was particularly difficult, and we regretted not handling navigation through UIKit. Despite these challenges, becoming an iOS developer proficient in SwiftUI over the past four years and staying up-to-date with innovations has been incredibly rewarding.

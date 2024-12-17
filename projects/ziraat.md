@@ -5,6 +5,7 @@ order: 1
 subtitle: "T.C. Ziraat Bankası A.Ş."
 popularity: "#3 in Finance"
 score: 4.8
+props: [CI/CD, Dependency Container, SealSDK, Cocoapods, Charts, MVC, Objective-C, RxSwift]
 rating: "1.4M Ratings"
 description: "More than a bank!"
 imageFolder: "ziraat"

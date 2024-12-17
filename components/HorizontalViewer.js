@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const HorizontalViewer = ({ folderName, imageCount = 6 }) => {
   return (
-    <div className="overflow-x-auto whitespace-nowrap h-full">
-      <ul className="flex space-x-4">
+    <div className="overflow-x-auto overflow-y-hidden whitespace-nowrap h-full">
+      <ul className="flex space-x-4 h-full">
         {[...Array(imageCount)].map((_, index) => (
           <li
             key={index}
@@ -13,9 +13,7 @@ const HorizontalViewer = ({ folderName, imageCount = 6 }) => {
             <div className="relative w-56 h-full bg-gray-200">
               <Image
                 src={`/images/${folderName}/thumb-${index + 1}.webp`}
-                layout="responsive"
-                width={230}
-                height={400}
+                layout="fill"
                 objectFit="contain"
                 alt=""
                 placeholder="blur"
