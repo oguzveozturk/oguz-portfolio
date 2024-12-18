@@ -17,7 +17,6 @@ import HighlightedText from "../components/HighlightedText";
 export default function Home({ projects }) {
   const [isActive, setIsActive] = useState(1);
   const [isAnimated, setIsAnimated] = useState(true);
-  const [isPlayAudio, setIsPlayAudio] = useState(false);
   const [isClient, setIsClient] = useState(false);
   const Categories = [
     { id: 1, title: "Client project" },
@@ -55,7 +54,7 @@ export default function Home({ projects }) {
       <main className=" flex-col space-y-12 md:space-y-24 ">
         {/* Hero section */}
 
-        <section className="mt-12 flex flex-col-reverse space-y-12 lg:space-y-0 lg:flex-row lg:justify-between lg:items-start">
+        <section className="mt-12 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-start">
           <div className="lg:w-2/3">
             <HighlightedText
              highlightText={"Oguz."}

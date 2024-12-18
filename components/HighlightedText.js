@@ -8,7 +8,10 @@ function HighlightedText({ highlightText, wholeText }) {
     if (typeof window !== "undefined") {
       const root = document.documentElement;
       const updateHighlightColor = () => {
-        setHighlightColor(root.classList.contains('dark') ? "#f96036" : "#FFAD95");
+        const newColor = root.classList.contains('dark') ? "#f96036" : "#FFAD95";
+        if (highlightColor !== newColor) {
+          setHighlightColor(newColor);
+        }
       };
 
       updateHighlightColor();
@@ -17,7 +20,7 @@ function HighlightedText({ highlightText, wholeText }) {
 
       return () => observer.disconnect();
     }
-  }, []);
+  }, [highlightColor]); // Added highlightColor as a dependency
 
   const getHighlightedText = () => {
     const parts = wholeText.split(new RegExp(`(${highlightText})`, 'gi'));
@@ -29,7 +32,7 @@ function HighlightedText({ highlightText, wholeText }) {
             show={true}
             color={highlightColor}
             animationDuration={1200}
-            key={index}
+            key={`${index}-${highlightColor}`} // Use a unique key
           >
             {part}
           </RoughNotation>

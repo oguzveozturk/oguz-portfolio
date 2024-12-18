@@ -46,7 +46,7 @@ function aboutMe() {
               />
             </div>
             <div className="lg:w-2/3 lg:mr-12">
-              <p className=" text-sm  mt-4 leading-normal md:leading-loose  md:text-base  text-gray-700 font-normal  ">
+              <p className="text-sm mt-4 leading-normal md:leading-loose md:text-base text-gray-700 dark:text-white font-normal">
                 Hi there! I'm Oguz, a passionate software developer with a background in civil engineering. 
                 I graduated from Sakarya University in 2015 and spent four years in the civil engineering 
                 field before transitioning to software development in 2019. In 2021, I got married and 

@@ -23,7 +23,6 @@ function Footer() {
             link="mailto:oguzveozturk@gmail.com"
           />
         </div>
-        <NavBar />
       </div>
     </footer>
   );

@@ -9,7 +9,7 @@ import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
 import CustomImage from "../components/CustomImage";
-import { RoughNotation } from "react-rough-notation";
+import HighlightedText from "../components/HighlightedText";
 import HorizontalViewer from "../components/HorizontalViewer";
 import AppStoreListing from "../components/AppstoreListing";
 import { useEffect, useState } from "react";
@@ -71,16 +71,7 @@ function page({
             <CustomLink link="/" title="← Go Back" />
           </div>
           <div className="flex justify-between items-end">
-            <h2 className="mt-8 text-xl md:text-2xl lg:text-3xl font-bold">
-              <RoughNotation
-                type="highlight"
-                show={true}
-                color={"#FFAD95"}
-                animationDuration={1200}
-              >
-                {title}
-              </RoughNotation>
-            </h2>
+          <HighlightedText highlightText={title} wholeText={title} />
             {live && <AppStoreDownload href={live} />}
           </div>
           <p className="text text-justify ">{paragraph}</p>
