@@ -3,8 +3,8 @@ import NavBar from "../components/NavBar";
 import Head from "next/head";
 import { motion } from "framer-motion";
 import CustomLink from "../components/CustomLink";
-import { RoughNotation } from "react-rough-notation";
 import CustomImage from "../components/CustomImage";
+import HighlightedText from "../components/HighlightedText";
 import HeroImage from "../public/images/aboutMe.webp";
 import Instagram from "../public/images/instagram.webp";
 import Timeline from "../components/Timeline";
@@ -36,17 +36,7 @@ function aboutMe() {
           <div className="mt-12 lg:mt-0">
             <CustomLink link="/" title="← Go Back" />
           </div>
-          <h2 className=" my-8 text-xl md:text-2xl lg:text-3xl font-bold">
-            {" "}
-            <RoughNotation
-              type="highlight"
-              show={true}
-              color={"#FFAD95"}
-              animationDuration={1200}
-            >
-              About Me
-            </RoughNotation>
-          </h2>
+          <HighlightedText highlightText="About Me" wholeText="About Me" />
           <div className="flex flex-col space-y-12 lg:space-y-0 lg:flex-row-reverse lg:justify-between lg:items-center ">
             <div className="relative w-[300px] lg:w-1/3   h-[410px]  ">
               <CustomImage
@@ -57,19 +47,23 @@ function aboutMe() {
             </div>
             <div className="lg:w-2/3 lg:mr-12">
               <p className=" text-sm  mt-4 leading-normal md:leading-loose  md:text-base  text-gray-700 font-normal  ">
-                Hello again! Did I mention my name is Oguz? : ) I graduated from
-                Sakarya University with a degree in Civil Engineering in 2015.
-                After a 4-year career in civil engineering, I made a leap into
-                the world of software in 2019. In 2021, I tied the knot and
-                embarked on a new adventure called marriage. Currently, I'm
-                living in the vibrant city of Istanbul. I'm a movie buff and a
-                gaming enthusiast, especially when it comes to soulslike games.
+                Hi there! I'm Oguz, a passionate software developer with a background in civil engineering. 
+                I graduated from Sakarya University in 2015 and spent four years in the civil engineering 
+                field before transitioning to software development in 2019. In 2021, I got married and 
+                started a new chapter in my life. Currently, I'm
+                living in the vibrant city of Istanbul. 
+                <br /><br />
+
+                I'm a movie buff and a gaming enthusiast, especially when it comes to soulslike games.
                 Oh, and I'm a die-hard Fenerbahçe fan, which means I'm used to a
                 rollercoaster of emotions. When I'm not coding or cheering for
                 my team, you can find me enjoying a good laugh and a cup of
                 coffee! If you ever need someone to discuss the latest movie
                 plot twists or the best strategies for beating a tough game
-                boss, I'm your guy. And if you see me with a puzzled look, I'm
+                boss, I'm your guy. 
+                <br /><br />
+
+                And if you see me with a puzzled look, I'm
                 probably debugging code or wondering if cinema has really died.
                 So, let's keep the code clean and the coffee strong!
               </p>

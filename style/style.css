@@ -8,6 +8,8 @@ body {
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  background-color: var(--bg-color, #ffffff);
+  color: var(--text-color, #000000);
 }
 
 img {
@@ -16,5 +18,13 @@ img {
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+}
+
+.text-gray-800 {
+  color: var(--text-gray-800, #000000); /* Default color for light mode */
+}
+
+.text-lightBlue {
+  color: #0277DD; /* Preserve blue color */
 }
 

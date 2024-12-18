@@ -39,21 +39,21 @@ const Timeline = () => {
     <div className="w-full py-12 px-4">
       <div className="relative w-full max-w-3xl mx-auto">
         {/* Timeline line */}
-        <div className="absolute left-[-10%] right-[-10%] top-1/2 transform -translate-y-1/2 h-0.5 bg-gray-200"></div>
+        <div className="absolute left-[-10%] right-[-10%] top-1/2 transform -translate-y-1/2 h-0.5 bg-gray-200 dark:bg-gray-700"></div>
 
         {/* Timeline container */}
         <div className="relative flex justify-between items-center">
           {timelineEvents.map((event, index) => (
             <div key={index} className={`relative flex flex-col items-center ${index % 2 === 0 ? 'top-1/2' : 'bottom-1/2'}`}>
               {/* Dot - positioned exactly on the line */}
-              <div className="absolute top-1/2 transform -translate-y-1/2 w-2 h-2 bg-gray-300 rounded-full z-10"></div>
+              <div className="absolute top-1/2 transform -translate-y-1/2 w-2 h-2 bg-gray-300 dark:bg-gray-500 rounded-full z-10"></div>
 
               {/* Label - left-bottom corner attached to dot */}
               <div className={`w-32 absolute ${index % 2 === 0 ? '-top-24' : 'top-4'}`}>
-                <div className="bg-white shadow-lg p-3 rounded-lg border border-gray-200 transform transition-transform duration-300 hover:scale-105">
-                  <h3 className="font-bold text-sm">{event.date}</h3>
-                  <p className="text-xs text-gray-600">{event.title}</p>
-                  <p className="text-xs text-gray-500">{event.description}</p>
+                <div className="bg-white dark:bg-gray-800 shadow-lg p-3 rounded-lg border border-gray-200 dark:border-gray-600 transform transition-transform duration-300 hover:scale-105">
+                  <h3 className="font-bold text-sm dark:text-gray-300">{event.date}</h3>
+                  <p className="text-xs text-gray-600 dark:text-gray-400">{event.title}</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-500">{event.description}</p>
                 </div>
               </div>
             </div>

@@ -3,7 +3,7 @@ title: "State of Flights"
 category: 2
 order: 3
 props: [VIPER, Modular, SPM, Unit Testing, Programmatic UI]
-popularity: "• Modular • VIPER"
+popularity: "• VIPER"
 description: "Preview latest flights"
 imageFolder: "flights"
 imageCount: 3

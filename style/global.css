@@ -53,6 +53,57 @@
   .markdown > ul {
     @apply list-disc px-4 lg:px-6 font-bold text-darkBlue;
   }
+
+  /* Dark theme styles */
+  .dark {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --link-color: #0277DD; /* Preserve blue color */
+    --border-color: #333;
+    --text-gray-800: #e0e0e0; /* Ensure text is readable */
+    --highlight-color: #ea580c; /* New highlight color for dark mode */
+  }
+
+  .dark body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+
+  .dark a {
+    color: var(--link-color);
+  }
+
+  .dark .border {
+    border-color: var(--border-color);
+  }
+
+  .dark .text-gray-800 {
+    color: #e0e0e0; /* Ensure text is readable */
+  }
+
+  .dark .text-lightBlue {
+    color: #0277DD; /* Preserve blue color */
+  }
+
+  .dark .appstore-listing-title {
+    color: #ffffff; /* Ensure title is whitish */
+  }
+
+  .dark .appstore-listing-popularity {
+    color: #a0a0a0; /* Ensure popularity is grayish */
+  }
+
+  .dark .filter.text-black {
+    color: #e0e0e0; /* Ensure text is readable in dark mode */
+  }
+
+  .dark .navbar-icon {
+    filter: invert(1);
+  }
+
+  .dark .highlight-dark {
+    background-color: var(--highlight-color) !important;
+  }
 }
 @layer utilities {
   .shadow {

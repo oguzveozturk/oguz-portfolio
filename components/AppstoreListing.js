@@ -42,12 +42,12 @@ const AppStoreListing = ({
           {/* App Details */}
           <div className="flex-grow flex flex-col justify-start">
             <div className="flex items-center space-x-3 mb-1">
-              <h1 className="text-2xl font-semibold tracking-[-0.022em]">
+              <h1 className="appstore-listing-title text-2xl font-semibold tracking-[-0.022em] dark:text-white">
                 {title}
               </h1>
             </div>
 
-            <h2 className="text-lg text-gray-600 mb-1.5 tracking-[-0.022em]">
+            <h2 className="appstore-listing-popularity text-lg text-gray-600 mb-1.5 tracking-[-0.022em]">
               {description}
             </h2>
 
@@ -56,7 +56,9 @@ const AppStoreListing = ({
             </div>
 
             <div className="flex flex-col space-y-1">
-              <a className="text-gray-600 text-sm">{popularity}</a>
+              <a className="appstore-listing-popularity text-gray-600 text-sm">
+                {popularity}
+              </a>
 
               {score > 0 && (
                 <div className="flex left-8">

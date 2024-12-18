@@ -13,6 +13,7 @@ import matter from "gray-matter";
 import processGif from "../public/images/gif.gif";
 import { RoughNotation } from "react-rough-notation";
 import AppStoreListing from "../components/AppstoreListing";
+import HighlightedText from "../components/HighlightedText";
 
 export default function Home({ projects }) {
   const [isActive, setIsActive] = useState(1);
@@ -49,7 +50,7 @@ export default function Home({ projects }) {
         <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap" />
       </Head>
       {/* Navbar */}
-      <nav>
+      <nav className="flex items-center">
         <NavBar />
       </nav>
       <main className=" flex-col space-y-12 md:space-y-24 ">
@@ -57,19 +58,10 @@ export default function Home({ projects }) {
 
         <section className="mt-12 flex flex-col-reverse space-y-12 lg:space-y-0 lg:flex-row lg:justify-between lg:items-start">
           <div className="lg:w-2/3">
-            <h1 className=" text-xl md:text-2xl lg:text-3xl font-bold leading-loose lg:text-justify	 md:leading-normal lg:leading-normal">
-              Hey There! I'm{" "}
-              <RoughNotation
-                type="highlight"
-                show={true}
-                color={"#FFAD95"}
-                animationDuration={1200}
-              >
-                Oguz.
-              </RoughNotation>
-              <br />
-              iOS Developer & Different thinker.
-            </h1>
+            <HighlightedText
+             highlightText={"Oguz."}
+             wholeText={"Hey There! I'm Oguz.\niOS Developer & Different thinker."}
+            />
 
             <p className=" text-sm  mt-4 leading-normal 	 md:leading-loose  md:text-base text-justify	 text-gray-800 font-normal ">
               My goal is to enhance your iOS
@@ -164,8 +156,8 @@ export default function Home({ projects }) {
                   }}
                   className={
                     isActive === filter.id
-                      ? "filter text-black  transitions"
-                      : `filter text-gray-400  transitions ${
+                      ? `filter text-black transitions`
+                      : `filter text-gray-400 transitions ${
                           isAnimated ? "animate-bounce" : null
                         }`
                   }

@@ -3,7 +3,7 @@ title: "Stock Tracker"
 category: 2
 order: 1
 props: [CI/CD, SealSDK, Cocoapods, Charts, MVC, Objective-C]
-popularity: "• Modular • VIPER"
+popularity: "• VIPER"
 description: "Explore Market Trends"
 imageFolder: "stocktracker"
 imageCount: 3

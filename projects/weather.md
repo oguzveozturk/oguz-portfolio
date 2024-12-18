@@ -3,7 +3,7 @@ title: "Weather Forecast"
 category: 2
 order: 2
 props: [CI/CD, SealSDK, Cocoapods, Charts, MVC, Objective-C]
-popularity: "• Modular • VIPER"
+popularity: "• VIPER"
 description: "8 Days Weather Insight"
 imageFolder: "weather"
 imageCount: 3
