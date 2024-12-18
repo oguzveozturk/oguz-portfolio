@@ -10,7 +10,6 @@ import HeroImage from "../public/images/oguz.webp";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import processGif from "../public/images/gif.gif";
 import { RoughNotation } from "react-rough-notation";
 import AppStoreListing from "../components/AppstoreListing";
 import HighlightedText from "../components/HighlightedText";
