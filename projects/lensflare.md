@@ -12,18 +12,14 @@ role: "iOS Developer"
 time: "02/2024 - 01/2024 - 11 Months"
 ---
 
-### Features
+### Project Structure
+<strong>LensFlare</strong> project is implemented using the <strong>MVVM</strong> architecture pattern. All the logic is handled within the view model:
 
--  Image rendering with CoreGraphics
-
-- Image I/O framework for showing images (memory friendly)
-
-- Working offline by saving overlays to local data
-
-- MVVM Application Architecture
-
-- Shows a histogram graph of given image -via vImage-
-
-- No third parthy libraries
-
-- UI programmatically coded
+• <strong>AppCoordinator</strong>: Main coordinator that initializes and manages child coordinators.<br>
+• <strong>LensFlare</strong>: Beginning of the app. Contains AppDelegate, AppRouter, and AppContainer.<br>
+• <strong>LensEffectModule</strong>: Creates and manages lens flare effects.<br>
+• <strong>ARKitManager</strong>: Manages ARKit sessions and configurations.<br>
+• <strong>SceneKitManager</strong>: Manages SceneKit scenes and nodes.<br>
+• <strong>CoreMLManager</strong>: Manages CoreML models and predictions.<br>
+• <strong>Cache</strong>: Saves the latest data for a given amount of time.<br>
+• <strong>Common</strong>: Files or resources that are shared across multiple parts of the project. Such as utility classes, global constants, or extensions.<br>

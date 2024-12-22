@@ -14,32 +14,13 @@ time: "02/2024 - 01/2024 - 11 Months"
 
 ### Project Structure
 
-The project is organized into several packages and modules to maintain a clean and scalable codebase. Here is a breakdown of the main components:
+This project is implemented using the <strong>MVVM</strong> architecture pattern. All the logic is handled within the view model:
 
-- **AppCoordinator**: Main coordinator that initializes and manages child coordinators.
-
-- **ApolloModels**: Contains GraphQL models and related data handling code.
-
-- **Base**: Includes base classes and protocols used across the app.
-
-- **CommonView**: Houses common UI components used throughout the app.
-
-- **Coordinator**: Contains the Coordinator protocol and related classes to handle navigation.
-
-- **Entity**: Contains models that are mapped from Apollo generated models.
-
-- **Extension**: Holds various extensions for different classes and utilities.
-
-- **GraphQLClient**: Manages GraphQL client setup and configurations.
-
-- **ModelGenerator**: Contains tools and scripts for generating models.
-
-- **Modules**: Includes the main feature modules of the app.
-
-- **StockDetailModule**: Handles the stock detail feature.
-
-- **StockListModule**: Manages the stock list feature.
-
-- **STChart**: Manages chart rendering and related functionalities.
-
-- **UIExtension**: Contains extensions for UIKit components.
+• <strong>AppCoordinator</strong>: Main coordinator that initializes and manages child coordinators.<br>
+• <strong>StockTracker</strong>: Beginning of the app. Contains AppDelegate, AppRouter, and AppContainer.<br>
+• <strong>StockSearchModule</strong>: Creates search requests via search bar and lists them.<br>
+• <strong>StocksAPI</strong>: Derived from NetworkService. Contains endpoints and decoder models.<br>
+• <strong>NetworkService</strong>: Files or classes related to communicating with an external API. This could include code for making HTTP requests to a web server, parsing responses, and handling any errors that may occur.<br>
+• <strong>LocationManager</strong>: Can get user location and find the coordinates of the written location.<br>
+• <strong>Cache</strong>: Saves the latest data for a given amount of time.<br>
+• <strong>Common</strong>: Files or resources that are shared across multiple parts of the project. Such as utility classes, global constants, or extensions.<br>
