@@ -2,7 +2,7 @@
 title: "Lensflare"
 category: 2
 order: 4
-props: [CI/CD, SealSDK, Cocoapods, Charts, MVC, Objective-C]
+props: [CoreData, Caching, MVVM, ImageIO, vImage, CoreGraphics]
 popularity: "• MVVM"
 description: "Overlay lens flare"
 imageFolder: "lensflare"
