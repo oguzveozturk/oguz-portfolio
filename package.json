@@ -16,7 +16,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-richtext": "^1.1.0",
-    "react-rough-notation": "^1.0.5"
+    "react-rough-notation": "^1.0.5",
+    "sharp": "^0.34.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
