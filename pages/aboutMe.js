@@ -38,7 +38,7 @@ function aboutMe() {
           </div>
           <HighlightedText highlightText="About Me" wholeText="About Me" />
           <div className="flex flex-col space-y-12 lg:space-y-0 lg:flex-row-reverse lg:justify-between lg:items-center ">
-            <div className="relative w-[300px] lg:w-1/3   h-[410px]  ">
+            <div className="relative w-full lg:w-1/3 h-[410px]">
               <CustomImage
                 image={HeroImage.src}
                 alt="Hero Image"
@@ -71,8 +71,10 @@ function aboutMe() {
           </div>
         </div>
         {/* Timeline Section */}
-        <section className="py-12">
-          <Timeline />
+        <section className="py-12 overflow-x-auto lg:overflow-x-hidden">
+          <div className="min-w-[600px] lg:min-w-full">
+            <Timeline />
+          </div>
         </section>
         {/* Instagram Section */}
         <section className="flex flex-col space-y-12 lg:flex-row lg:space-y-0 lg:spacex-12 lg:items-center lg:justify-between">

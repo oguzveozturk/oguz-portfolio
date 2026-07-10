@@ -97,7 +97,7 @@
     color: #e0e0e0; /* Ensure text is readable in dark mode */
   }
 
-  .dark .navbar-icon {
+  .dark img.navbar-icon {
     filter: invert(1);
   }
 

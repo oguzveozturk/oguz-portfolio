@@ -42,7 +42,7 @@ const Timeline = () => {
         <div className="absolute left-[-10%] right-[-10%] top-1/2 transform -translate-y-1/2 h-0.5 bg-gray-200 dark:bg-gray-700"></div>
 
         {/* Timeline container */}
-        <div className="relative flex justify-between items-center">
+        <div className="relative flex justify-between items-center pl-12">
           {timelineEvents.map((event, index) => (
             <div key={index} className={`relative flex flex-col items-center ${index % 2 === 0 ? 'top-1/2' : 'bottom-1/2'}`}>
               {/* Dot - positioned exactly on the line */}

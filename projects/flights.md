@@ -14,9 +14,11 @@ time: "02/2024 - 01/2024 - 11 Months"
 
 ### Project Structure
 
-* "StateOfFlights": Begining of the app.Contains AppDelegate, AppRouter and AppContainer. 
-* "FlightsMap": A draggable map displaying the real-time status of flights.".
-* "CountrySelector": Builted with UISheetPresentationController. The Table below the screen allows the user to select the origin country.
-* "FlightAPI": Files or classes related to communicating with an external API. This could include code for making HTTP requests to a web server, parsing responses, and handling any errors that may occur.
-* "CommonViews": Reusable UI elements.
-* "Common": Files or resources that are shared across multiple parts of the project. Such as utility classes, global constants or extensions.
+<strong>StateOfFlights</strong> project is implemented using the <strong>VIPER</strong> architecture pattern. All the logic is handled within the controller:
+
+• <strong>StateOfFlights</strong>: Beginning of the app. Contains AppDelegate, AppRouter, and AppContainer.<br>
+• <strong>FlightsMap</strong>: A draggable map displaying the real-time status of flights.<br>
+• <strong>CountrySelector</strong>: Built with UISheetPresentationController. The table below the screen allows the user to select the origin country.<br>
+• <strong>FlightAPI</strong>: Files or classes related to communicating with an external API. This could include code for making HTTP requests to a web server, parsing responses, and handling any errors that may occur.<br>
+• <strong>CommonViews</strong>: Reusable UI elements.<br>
+• <strong>Common</strong>: Files or resources that are shared across multiple parts of the project, such as utility classes, global constants, or extensions.<br>

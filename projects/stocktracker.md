@@ -2,7 +2,7 @@
 title: "Stock Tracker"
 category: 2
 order: 1
-props: [CI/CD, SealSDK, Cocoapods, Charts, MVC, Objective-C]
+props: [Apollo GraphQL, Argument Parser, MVVM-C, Modular, SPM, Combine]
 popularity: "• VIPER"
 description: "Explore Market Trends"
 imageFolder: "stocktracker"
@@ -16,30 +16,16 @@ time: "02/2024 - 01/2024 - 11 Months"
 
 The project is organized into several packages and modules to maintain a clean and scalable codebase. Here is a breakdown of the main components:
 
-- **AppCoordinator**: Main coordinator that initializes and manages child coordinators.
-
-- **ApolloModels**: Contains GraphQL models and related data handling code.
-
-- **Base**: Includes base classes and protocols used across the app.
-
-- **CommonView**: Houses common UI components used throughout the app.
-
-- **Coordinator**: Contains the Coordinator protocol and related classes to handle navigation.
-
-- **Entity**: Contains models that are mapped from Apollo generated models.
-
-- **Extension**: Holds various extensions for different classes and utilities.
-
-- **GraphQLClient**: Manages GraphQL client setup and configurations.
-
-- **ModelGenerator**: Contains tools and scripts for generating models.
-
-- **Modules**: Includes the main feature modules of the app.
-
-- **StockDetailModule**: Handles the stock detail feature.
-
-- **StockListModule**: Manages the stock list feature.
-
-- **STChart**: Manages chart rendering and related functionalities.
-
-- **UIExtension**: Contains extensions for UIKit components.
+• <strong>ApolloModels</strong>: Contains GraphQL models and related data handling code.<br>
+• <strong>Base</strong>: Includes base classes and protocols used across the app..<br>
+• <strong>CommonView</strong>: Houses common UI components used throughout the app.<br>
+• <strong>Coordinator</strong>: Contains the Coordinator protocol and related classes to handle navigation.<br>
+• <strong>Entity</strong>: Contains models that are mapped from Apollo generated models.<br>
+• <strong>Extension</strong>: Holds various extensions for different classes and utilities.<br>
+• <strong>GraphQLClient</strong>: <br>
+• <strong></strong>: Manages GraphQL client setup and configurations.<br>
+• <strong>ModelGenerator</strong>:  Uses ArgumentParser for generating models.<br>
+• <strong>Modules</strong>:  Shared models that general use in app.<br>
+• <strong>StockDetailModule</strong>: Handles the stock detail feature.<br>
+• <strong>StockListModule</strong>: Manages the stock list feature.<br>
+• <strong>STChart</strong>: Manages chart rendering and related functionalities.<br>
