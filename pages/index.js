@@ -144,9 +144,9 @@ export default function Home({ projects }) {
         <section className="">
           <h2 className="title">Recent Work </h2>
           <p className="text-sm  mt-6  leading-normal md:leading-loose text-justify	 sm:w-4/5 md:w-4/5 md:text-base  text-gray-800 font-normal  ">
-            I like to stay busy and always have a project in the works. Take a
-            look at some of the applications, and companies I've dedicated my
-            time to.
+            A mix of client work and personal case studies — apps I've shipped
+            for companies, and projects I built to explore new tools and
+            architectures.
           </p>
           <div className="flex space-x-6 lg:space-x-12 mt-8 ">
             {Categories.map((filter) => (
@@ -212,8 +212,8 @@ export default function Home({ projects }) {
           <div>
             <h2 className="title">My Skills</h2>
             <p className="text-sm  mt-4 leading-normal md:leading-loose	 md:text-base text-justify	 text-gray-800 font-normal  md:w-4/5">
-              As a developer, I am convinced that the way to be successful in
-              such a crowded market is to always LEARN!
+              The tools I work with every day. The list keeps growing — that's
+              my favorite part of this job.
             </p>
             <ul className="grid grid-cols-2 gap-6 lg:grid-cols-4 lg:gap-10 mt-8  font-bold text-sm md:text-base">
               <li>
@@ -254,7 +254,9 @@ export default function Home({ projects }) {
 
 export async function getStaticProps() {
   //  get files from projects directory
-  const files = fs.readdirSync(path.join("projects"));
+  const files = fs
+    .readdirSync(path.join("projects"))
+    .filter((filename) => filename.endsWith(".md"));
 
   // Get slug and frontmatter from posts
   const projects = files.map((filename) => {

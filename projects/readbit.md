@@ -10,7 +10,7 @@ rating: "613 Ratings"
 description: "Text to Speech Reader"
 imageFolder: "readbit"
 imageCount: 10
-paragraph: "I spearheaded the ReadBit project in 2021, leveraging SwiftUI to stay ahead of the curve with modern iOS development practices. This early adoption allowed me to quickly become proficient with SwiftUI and Combine frameworks. Our team, consisting of 4-6 iOS developers, collaborated closely to build a robust subscription management system from the ground up. We also successfully integrated a seamless paywall experience, enhancing the app's monetization strategy."
+paragraph: "I took a leading role on ReadBit starting in 2021, when we adopted SwiftUI and Combine earlier than most teams — a bet that paid off and made me proficient with both well before they became the default choice. Working in a team of 4-6 iOS developers, we built the subscription management system and paywall flow from the ground up."
 role: "iOS Developer"
 time: "06/2021 - 06/2023 - 2 Years"
 live: "https://apps.apple.com/tr/app/readbit-text-to-speech-reader/id1545366628?l=tr&platform=iphone"

@@ -14,7 +14,8 @@ function Footer() {
 
           <p className="text-sm font-normal my-8 md:text-base text-gray-800  leading-loose ">
             Looking for an iOS developer? Let's talk about what you're building.
-            <br /> Drop me an email, or send a DM on any of the links above.
+            <br /> Drop me an email, or reach out on any of the platforms
+            above.
           </p>
           <CustomLink
             title="oguzveozturk@gmail.com"

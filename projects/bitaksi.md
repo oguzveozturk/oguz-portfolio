@@ -18,4 +18,4 @@ live: "https://apps.apple.com/tr/app/bitaksi-your-taxi/id589500723"
 
 ### Challenges
 
-One of the biggest challenges I faced in this project was migrating old libraries used with Cocoapods to their new versions with SPM. Additionally, during the development of the Monetization feature, calculating the pins within the visible area of the map to ensure the correct events were sent at the right time was a demanding and educational experience.
+One of the biggest challenges I faced in this project was migrating old libraries used with Cocoapods to their new versions with SPM. Additionally, during the development of the Monetization feature, calculating the pins within the visible area of the map to ensure the correct events were sent at the right time was demanding but rewarding.

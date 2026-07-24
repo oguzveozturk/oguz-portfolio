@@ -10,7 +10,7 @@ rating: "24 Ratings"
 description: "Best way to GO!"
 imageFolder: "3togo"
 imageCount: 6
-paragraph: "3ToGo marked my entry into the professional world as an iOS developer. Our compact team of four efficiently developed the project using the MVC architecture and programmatic UI. We selected Firebase Database for backend services and integrated Google Maps for location-based features."
+paragraph: "3ToGo was my first professional iOS project. Our team of four built the app with MVC architecture and programmatic UI, using Firebase for the backend and Google Maps for location-based features."
 role: "Junior iOS Developer"
 time: "04/2019 - 06/2020 - 14 Months"
 ---

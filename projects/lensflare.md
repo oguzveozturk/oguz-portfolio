@@ -20,4 +20,4 @@ paragraph: "LensFlare retrieves lens flare overlays from a server, lets the user
 • <strong>OverlayStore</strong>: Persists downloaded overlays and their metadata with CoreData.<br>
 • <strong>PhotoLibraryService</strong>: Handles export permissions and writing the final image to the gallery.<br>
 • <strong>Cache</strong>: Saves the latest data for a given amount of time.<br>
-• <strong>Common</strong>: Files or resources that are shared across multiple parts of the project. Such as utility classes, global constants, or extensions.<br>
+• <strong>Common</strong>: Files and resources shared across the project, such as utility classes, global constants and extensions.<br>

@@ -156,7 +156,9 @@ function page({
 export default page;
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync(path.join("projects"));
+  const files = fs
+    .readdirSync(path.join("projects"))
+    .filter((filename) => filename.endsWith(".md"));
 
   const paths = files.map((filename) => ({
     params: {
@@ -178,7 +180,9 @@ export async function getStaticProps({ params: { slug } }) {
 
   const { data: frontmatter, content } = matter(markdownWithMeta);
   //  get files from projects directory
-  const files = fs.readdirSync(path.join("projects"));
+  const files = fs
+    .readdirSync(path.join("projects"))
+    .filter((filename) => filename.endsWith(".md"));
 
   // Get slug and frontmatter from posts
   const projects = files.map((filename) => {
