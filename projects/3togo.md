@@ -12,7 +12,7 @@ imageFolder: "3togo"
 imageCount: 6
 paragraph: "3ToGo marked my entry into the professional world as an iOS developer. Our compact team of four efficiently developed the project using the MVC architecture and programmatic UI. We selected Firebase Database for backend services and integrated Google Maps for location-based features."
 role: "Junior iOS Developer"
-time: "02/2024 - 01/2024 - 11 Months"
+time: "04/2019 - 06/2020 - 14 Months"
 ---
 
 ### Challenges

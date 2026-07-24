@@ -5,14 +5,14 @@ order: 2
 subtitle: "T.C. Ziraat Bankası A.Ş."
 popularity: "#3 in Finance"
 score: 4.8
-props: [CI/CD, Dependency Container, SealSDK, Cocoapods, Charts, MVC, Objective-C, RxSwift]
+props: [CI/CD, Dependency Container, SealSDK, Cocoapods, DGCharts, MVC, Objective-C, RxSwift]
 rating: "1.4M Ratings"
 description: "More than a bank!"
 imageFolder: "ziraat"
 imageCount: 10
-paragraph: "I worked as a Senior iOS Developer on the Ziraat Mobil application for 11 months. As part of a 40-person team at Roofstacks, we provided outsourcing services to Ziraat Bank. During this time, I played a key role in integrating the latest version of SealSDK into the application. Additionally, as part of Ziraat Bank’s Digital Transformation Program, I was actively involved in redesigning the main dashboard and developing the funds management screens."
+paragraph: "I worked as a Senior iOS Developer on the Ziraat Mobil application for 11 months. As part of a 40-person team at Roofstacks, we provided outsourcing services to Ziraat Bank. My main area was the investment module of Ziraat Dynamic Banking: stock trading, portfolio and profit/loss screens built around data-heavy charting with DGCharts. I also integrated the latest version of SealSDK across Ziraat Bank's iOS applications and, as part of the bank's Digital Transformation Program, rebuilt core UI flows including the login experience, the main dashboard and the funds management screens."
 role: "Senior iOS Developer"
-time: "02/2024 - 01/2024 - 11 Months"
+time: "02/2024 - 01/2025 - 11 Months"
 live: "https://apps.apple.com/tr/app/ziraat-mobil/id885993234?platform=iphone"
 ---
 

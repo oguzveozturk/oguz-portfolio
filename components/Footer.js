@@ -6,16 +6,15 @@ function Footer() {
     <footer>
       <div className="my-12 lg:mb-0 lg:mt-24">
         <div className="mb-12">
-          <h2 className="title">Now about your project !</h2>
+          <h2 className="title">Now about your project!</h2>
           <p className="text-sm font-normal  my-8 md:text-base">
             I’m currently{" "}
             <span className="text-lightBlue font-bold">available</span>
           </p>
 
           <p className="text-sm font-normal my-8 md:text-base text-gray-800  leading-loose ">
-            Looking for a developer? Let's work together and empower your
-            business.
-            <br /> Another option appears to be a question or a DM to connect!
+            Looking for an iOS developer? Let's talk about what you're building.
+            <br /> Drop me an email, or send a DM on any of the links above.
           </p>
           <CustomLink
             title="oguzveozturk@gmail.com"

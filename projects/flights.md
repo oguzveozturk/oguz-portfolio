@@ -7,14 +7,12 @@ popularity: "• VIPER"
 description: "Preview latest flights"
 imageFolder: "flights"
 imageCount: 3
-paragraph: "The user can drag the map to view active flights from opensky API. By clicking on the aircraft, they can obtain the ICAO24 code and origin country information. The flights can be filtered by origin country using the list at the bottom of the screen."
-role: "iOS Developer"
-time: "02/2024 - 01/2024 - 11 Months"
+paragraph: "The user can drag the map to view active flights from the OpenSky API. By clicking on the aircraft, they can obtain the ICAO24 code and origin country information. The flights can be filtered by origin country using the list at the bottom of the screen."
 ---
 
 ### Project Structure
 
-<strong>StateOfFlights</strong> project is implemented using the <strong>VIPER</strong> architecture pattern. All the logic is handled within the controller:
+<strong>StateOfFlights</strong> project is implemented using the <strong>VIPER</strong> architecture pattern. All the logic is handled within the presenter:
 
 • <strong>StateOfFlights</strong>: Beginning of the app. Contains AppDelegate, AppRouter, and AppContainer.<br>
 • <strong>FlightsMap</strong>: A draggable map displaying the real-time status of flights.<br>

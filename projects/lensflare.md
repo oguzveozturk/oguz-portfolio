@@ -7,9 +7,7 @@ popularity: "• MVVM"
 description: "Overlay lens flare"
 imageFolder: "lensflare"
 imageCount: 4
-paragraph: "LensFlare is a project that retrives overlays from the server and users can adds overlays on images and can be save in gallery."
-role: "iOS Developer"
-time: "02/2024 - 01/2024 - 11 Months"
+paragraph: "LensFlare retrieves lens flare overlays from a server, lets the user composite them onto their own photos, and saves the result back to the gallery. Overlays are cached locally so the app stays usable offline."
 ---
 
 ### Project Structure
@@ -18,8 +16,8 @@ time: "02/2024 - 01/2024 - 11 Months"
 • <strong>AppCoordinator</strong>: Main coordinator that initializes and manages child coordinators.<br>
 • <strong>LensFlare</strong>: Beginning of the app. Contains AppDelegate, AppRouter, and AppContainer.<br>
 • <strong>LensEffectModule</strong>: Creates and manages lens flare effects.<br>
-• <strong>ARKitManager</strong>: Manages ARKit sessions and configurations.<br>
-• <strong>SceneKitManager</strong>: Manages SceneKit scenes and nodes.<br>
-• <strong>CoreMLManager</strong>: Manages CoreML models and predictions.<br>
+• <strong>ImageProcessor</strong>: Composites the overlay onto the source image using ImageIO, vImage and CoreGraphics.<br>
+• <strong>OverlayStore</strong>: Persists downloaded overlays and their metadata with CoreData.<br>
+• <strong>PhotoLibraryService</strong>: Handles export permissions and writing the final image to the gallery.<br>
 • <strong>Cache</strong>: Saves the latest data for a given amount of time.<br>
 • <strong>Common</strong>: Files or resources that are shared across multiple parts of the project. Such as utility classes, global constants, or extensions.<br>
