@@ -57,16 +57,20 @@ export default function Home({ projects }) {
         <section className="mt-12 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-start">
           <div className="lg:w-2/3">
             <HighlightedText
-             highlightText={"Oguz."}
-             wholeText={"Hey There! I'm Oguz.\niOS Developer & Different thinker."}
+              highlightText={"Oguz."}
+              wholeText={
+                "Hey There! I'm Oguz.\nSenior iOS Developer in Istanbul."
+              }
             />
 
             <p className=" text-sm  mt-4 leading-normal 	 md:leading-loose  md:text-base text-justify	 text-gray-800 font-normal ">
-              My goal is to enhance your iOS
-              presence by applying high problem-solving skills and a deep
-              passion for developing robust, scalable solutions. I focus on
-              delivering clean, efficient code that meets user needs and
-              integrates seamlessly into iOS ecosystem.
+              Seven years of iOS, most of it in fintech. I currently build a
+              payment SDK embedded in the Turkish Airlines and AJet apps,
+              covering wallet, QR payments and camera-based KYC for millions of
+              users. Before that: mobile banking at Ziraat, ride-hailing at
+              BiTaksi, and computer vision products for blind users. I care
+              about code that ships, survives code review, and stays testable
+              five releases later.
             </p>
             <div className="flex space-x-6 mt-6">
               <CustomLink title="MORE ABOUT ME" link="/aboutMe" />
@@ -116,9 +120,9 @@ export default function Home({ projects }) {
             </p>
             <p className="text-sm  lg:w-2/3">
               <span className="font-extrabold text-orange animate-pulse">
-                Turkish Airlines
+                TKPay
               </span>{" "}
-              iOS Application
+              iOS SDK
             </p>
           </div>
           <div className="lg:w-1/3 ">
@@ -129,7 +133,7 @@ export default function Home({ projects }) {
                 color={"#FF7262"}
                 animationDelay={2000}
               >
-                LEARINING ABOUT{" "}
+                LEARNING ABOUT{" "}
               </RoughNotation>
             </p>
             <p className="text-sm  ">VisionOS</p>
@@ -140,9 +144,9 @@ export default function Home({ projects }) {
         <section className="">
           <h2 className="title">Recent Work </h2>
           <p className="text-sm  mt-6  leading-normal md:leading-loose text-justify	 sm:w-4/5 md:w-4/5 md:text-base  text-gray-800 font-normal  ">
-            I like to stay busy and always have a project in the works. Take a
-            look at some of the applications, and companies I've
-            dedicated my time to.
+            A mix of client work and personal case studies — apps I've shipped
+            for companies, and projects I built to explore new tools and
+            architectures.
           </p>
           <div className="flex space-x-6 lg:space-x-12 mt-8 ">
             {Categories.map((filter) => (
@@ -167,39 +171,38 @@ export default function Home({ projects }) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:my-4">
-            {projects.map((project, index) => (
-              <>
-                {project.frontmatter.category === isActive ? (
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{
-                      opacity: 1,
-                      y: 0,
-                      transition: transition,
-                    }}
-                  >
-                    {isClient && (
-                      <AppStoreListing
-                        folder={project.frontmatter.imageFolder}
-                        title={project.frontmatter.title}
-                        subtitle={project.frontmatter.subtitle}
-                        popularity={project.frontmatter.popularity}
-                        description={project.frontmatter.description}
-                        score={project.frontmatter.score}
-                        rating={project.frontmatter.rating}
-                        link={
-                          project.frontmatter.soon
-                            ? project.frontmatter.live
-                            : `/${project.slug}`
-                        }
-                        role={project.frontmatter.role}
-                        time={project.frontmatter.time}
-                      />
-                    )}
-                  </motion.div>
-                ) : null}
-              </>
-            ))}
+            {projects
+              .filter((project) => project.frontmatter.category === isActive)
+              .map((project) => (
+                <motion.div
+                  key={project.slug}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{
+                    opacity: 1,
+                    y: 0,
+                    transition: transition,
+                  }}
+                >
+                  {isClient && (
+                    <AppStoreListing
+                      folder={project.frontmatter.imageFolder}
+                      title={project.frontmatter.title}
+                      subtitle={project.frontmatter.subtitle}
+                      popularity={project.frontmatter.popularity}
+                      description={project.frontmatter.description}
+                      score={project.frontmatter.score}
+                      rating={project.frontmatter.rating}
+                      link={
+                        project.frontmatter.soon
+                          ? project.frontmatter.live
+                          : `/${project.slug}`
+                      }
+                      role={project.frontmatter.role}
+                      time={project.frontmatter.time}
+                    />
+                  )}
+                </motion.div>
+              ))}
           </div>
         </section>
 
@@ -209,8 +212,8 @@ export default function Home({ projects }) {
           <div>
             <h2 className="title">My Skills</h2>
             <p className="text-sm  mt-4 leading-normal md:leading-loose	 md:text-base text-justify	 text-gray-800 font-normal  md:w-4/5">
-              As a developer, I am convinced that the way to be successful in
-              such a crowded market is to always LEARN!
+              The tools I work with every day. The list keeps growing — that's
+              my favorite part of this job.
             </p>
             <ul className="grid grid-cols-2 gap-6 lg:grid-cols-4 lg:gap-10 mt-8  font-bold text-sm md:text-base">
               <li>
@@ -251,7 +254,9 @@ export default function Home({ projects }) {
 
 export async function getStaticProps() {
   //  get files from projects directory
-  const files = fs.readdirSync(path.join("projects"));
+  const files = fs
+    .readdirSync(path.join("projects"))
+    .filter((filename) => filename.endsWith(".md"));
 
   // Get slug and frontmatter from posts
   const projects = files.map((filename) => {
@@ -261,7 +266,7 @@ export async function getStaticProps() {
     // Get frontmatter
     const markdownWithMeta = fs.readFileSync(
       path.join("projects", filename),
-      "utf-8"
+      "utf-8",
     );
 
     const { data: frontmatter } = matter(markdownWithMeta);
@@ -273,7 +278,7 @@ export async function getStaticProps() {
   });
 
   projects.sort(
-    (a, b) => (a.frontmatter.order || 0) - (b.frontmatter.order || 0)
+    (a, b) => (a.frontmatter.order || 0) - (b.frontmatter.order || 0),
   );
 
   return {

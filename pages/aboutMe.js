@@ -47,25 +47,22 @@ function aboutMe() {
             </div>
             <div className="lg:w-2/3 lg:mr-12">
               <p className="text-sm mt-4 leading-normal md:leading-loose md:text-base text-gray-700 dark:text-white font-normal">
-                Hi there! I'm Oguz, a passionate software developer with a background in civil engineering. 
-                I graduated from Sakarya University in 2015 and spent four years in the civil engineering 
-                field before transitioning to software development in 2019. In 2021, I got married and 
-                started a new chapter in my life. Currently, I'm
-                living in the vibrant city of Istanbul. 
+                I'm Oguz, an iOS developer with an unusual route into software.
+                I studied civil engineering at Sakarya University, graduated in
+                2014, and spent five years building things out of concrete
+                before deciding I'd rather build them out of Swift. I made the
+                switch in 2019 and haven't looked back. These days I live in
+                Istanbul with my wife.
                 <br /><br />
 
-                I'm a movie buff and a gaming enthusiast, especially when it comes to soulslike games.
-                Oh, and I'm a die-hard Fenerbahçe fan, which means I'm used to a
-                rollercoaster of emotions. When I'm not coding or cheering for
-                my team, you can find me enjoying a good laugh and a cup of
-                coffee! If you ever need someone to discuss the latest movie
-                plot twists or the best strategies for beating a tough game
-                boss, I'm your guy. 
+                Outside of work I'm a film buff and a gamer — soulslike games
+                in particular, so I'm well trained in dying repeatedly and
+                trying again. Being a die-hard Fenerbahçe fan teaches roughly
+                the same lesson.
                 <br /><br />
 
-                And if you see me with a puzzled look, I'm
-                probably debugging code or wondering if cinema has really died.
-                So, let's keep the code clean and the coffee strong!
+                If you ever want to argue about a plot twist or compare
+                boss-fight strategies, I'm your guy.
               </p>
             </div>
           </div>

@@ -81,7 +81,6 @@ function NavBar() {
           title={theme === "dark" ? "Light Mode" : "Dark Mode"}
         >
           {theme === "dark" ? (
-            // Güneş ikonu (dark mod aktifken)
             <svg
               className="navbar-icon text-black dark:text-white"
               width={20}
@@ -98,7 +97,6 @@ function NavBar() {
               <path d="M12 2v2m0 16v2M4 12H2m20 0h-2M5.64 5.64 4.22 4.22m15.56 15.56-1.42-1.42M5.64 18.36 4.22 19.78m15.56-15.56-1.42 1.42" />
             </svg>
           ) : (
-            // Ay ikonu (light mod aktifken)
             <svg
               className="navbar-icon text-black dark:text-white"
               width={20}

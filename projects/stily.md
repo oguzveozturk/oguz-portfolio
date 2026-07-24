@@ -1,7 +1,7 @@
 ---
 title: "Stily"
 category: 1
-order: 5
+order: 6
 props: [Socket.IO, Storyboard, MVC, Cocoapods, Social Media App]
 subtitle: "Improver Digital Tech."
 popularity: ""
@@ -10,7 +10,7 @@ rating: "160 Ratings"
 description: "Share your style!"
 imageFolder: "stily"
 imageCount: 5
-paragraph: "During my 4-month tenure at Improver Digital Tech, I started and completed this project. We were an 8-person team and worked swiftly to meet the client's requirements. This project allowed users to share their outfits, follow each other, and send DM's via socket. Unfortunately, the app was removed from the App Store two years after I left."
+paragraph: "I started and shipped this project within four months at Improver Digital Tech, as part of an 8-person team working against a tight client deadline. The app let users share their outfits, follow each other, and send direct messages over sockets. Unfortunately, it was removed from the App Store two years after I left."
 role: "iOS Developer"
 time: "07/2020 - 10/2020 - 4 Months"
 ---
