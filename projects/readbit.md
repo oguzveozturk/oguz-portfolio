@@ -1,7 +1,7 @@
 ---
 title: "ReadBit"
 category: 1
-order: 3
+order: 4
 props: [SwiftUI, Vision, Memory Managment, AVPlayer, Speech Synthesis, Firebase Firestore, MVVM]
 subtitle: "Mediate Tech."
 popularity: ""

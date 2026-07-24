@@ -1,7 +1,7 @@
 ---
 title: "Stily"
 category: 1
-order: 5
+order: 6
 props: [Socket.IO, Storyboard, MVC, Cocoapods, Social Media App]
 subtitle: "Improver Digital Tech."
 popularity: ""

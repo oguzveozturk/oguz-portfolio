@@ -1,7 +1,7 @@
 ---
 title: "3ToGo"
 category: 1
-order: 6
+order: 7
 props: [MVC, Google Maps API, Programmatic UI, Social Media App]
 subtitle: "3ToGo Inc."
 popularity: ""

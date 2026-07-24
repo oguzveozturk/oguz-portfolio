@@ -1,7 +1,7 @@
 ---
 title: "bitaksi - your taxi!"
 category: 1
-order: 2
+order: 3
 props: [CI/CD, Apple Maps, SPM, Firebase, MVVM, Dependency Container, Deeplinking]
 subtitle: "Bitaksi Mobil Teknoloji"
 popularity: "#6 in Travel"

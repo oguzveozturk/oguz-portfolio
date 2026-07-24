@@ -1,7 +1,7 @@
 ---
 title: "Ziraat Mobile"
 category: 1
-order: 1
+order: 2
 subtitle: "T.C. Ziraat Bankası A.Ş."
 popularity: "#3 in Finance"
 score: 4.8

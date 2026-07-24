@@ -1,7 +1,7 @@
 ---
 title: "Supersense"
 category: 1
-order: 4
+order: 5
 props: [UIKit, Unit Testing, RxSwift, Cocoapods, Google MLKit, Realm, AVFoundation]
 subtitle: "Mediate Tech."
 popularity: ""
